@@ -43,8 +43,8 @@ while True:
     all_findings.extend(findings)
     page += 1
 
-with open("sample-output.json", "w") as outfile:
+with open("findings-output.json", "w") as outfile:
     json.dump(all_findings, outfile, indent=2)
 
 print(f"Exported {len(all_findings)} findings")
-print("Output written to sample-output.json")
+print("Output written to findings-output.json")
