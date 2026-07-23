@@ -1,12 +1,10 @@
 import os
 import json
 import requests
-from dotenv import load_dotenv
 
-load_dotenv()
-
-TOKEN = os.getenv("SEMGREP_APP_TOKEN")
-DEPLOYMENT_SLUG = os.getenv("DEPLOYMENT_SLUG")
+# insert app-token and deployment slug below
+TOKEN = "your_semgrep_app_token"
+DEPLOYMENT_SLUG = "your_deployment_slug"
 
 # unix timestamp for 1st Jan 2026
 SINCE_TIMESTAMP = 1767225600

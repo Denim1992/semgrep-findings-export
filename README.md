@@ -2,11 +2,11 @@
 
 ## Setup
 
-Create a `.env` file containing:
+Open `fetch-findings.py` and update the following values:
 
-```text
-SEMGREP_APP_TOKEN=your-token
-DEPLOYMENT_SLUG=your-deployment-slug
+```python
+TOKEN = "your_semgrep_app_token"
+DEPLOYMENT_SLUG = "your_deployment_slug"
 ```
 
 The token and deployment slug can be obtained from the Semgrep UI.
@@ -30,3 +30,5 @@ pip install -r requirements.txt
 ```bash
 python fetch-findings.py
 ```
+
+The script retrieves Semgrep Code (SAST) findings from 1 January 2026 onwards and exports the results to `findings-output.json`.
